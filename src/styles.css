@@ -16,3 +16,8 @@ a{
 .row-striped {
 	padding: 15px 0;
 }
+
+.scrollBarCustom {
+  height: 60vh;
+  overflow-y: scroll;
+}

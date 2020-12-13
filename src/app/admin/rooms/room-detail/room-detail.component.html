@@ -1,0 +1,22 @@
+<div class="roomDetails">
+  <h2>Room Details</h2>
+  <a class="btn btn-small btn-warning" (click)="editRoom()">Edit</a>
+  <a class="btn btn-small btn-warning">Delete</a>
+  <table>
+    <tr>
+      <td>ID</td> <td>{{room.id}}</td>
+    </tr>
+    <tr>
+      <td>name</td> <td>{{room.name}}</td>
+    </tr>
+    <tr>
+      <td>location</td> <td>{{room.location}}</td>
+    </tr>
+  </table>
+  <h4>This room can accomodate:</h4>
+  <table>
+    <tr *ngFor="let layoutCapacity of room.capacities">
+      <td>{{layoutCapacity.layout}}</td> <td>{{layoutCapacity.capacity}}</td>
+    </tr>
+  </table>
+</div>
